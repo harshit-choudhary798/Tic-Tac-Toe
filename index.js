@@ -42,4 +42,33 @@ function updateValue(event) {
     }
 }
 
+function MatchFinals(myAnswer, id) {
+    for (let items of PossibleSolutions) {
+        solution = items;    //  here we have solution [0,1,2] 
+
+        PointsCount = 0;
+        won = "No"
+
+        for (let i = 0; i < 3; i++) {
+            if (myAnswer.includes(solution[i])) {
+                PointsCount++;
+            }
+
+        }
+        if (PointsCount === 3) {
+            won = "Yes"
+            console.log(`${id} is the winner`)
+           
+            winner.textContent = `${id} is the winner`
+
+        }
+    }
+
+    if(won=="No" && clickedCount===9){
+        console.log("Draw")
+        winner.textContent = "Draw"
+    }
+}
+
+
 
