@@ -71,4 +71,16 @@ function MatchFinals(myAnswer, id) {
 }
 
 
+resetbtn = document.getElementById('reset').addEventListener('click', function () {
+    PlayerXMoves = 0;
+    PlayerYMoves = 0;
 
+    PlayerXMovesArr = [];
+    PlayerYMovesArr = [];
+
+    currentPlayer="X"
+    
+    clickedBtns.forEach(function(childs){childs.innerHTML=""})
+    winner.textContent=""
+
+})
