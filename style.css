@@ -1,0 +1,51 @@
+
+p{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    width: 21%;
+    text-align: center;
+}
+#Main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Inner-container{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    width: 307px;
+}
+
+.child {
+    text-align: center;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 57px;
+    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    background-color: black;
+    padding: 13px;
+    color: white;
+    border-radius: 7px;
+    width: 9%;
+}
+
+#Winner-reveal{
+    background-color: rgba(0, 255, 0, 0.4);
+    color: white;
+    font-size: 2rem;
+    width: 21%;
+    text-align: center;
+    color: black;
+}
